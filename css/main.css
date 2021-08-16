@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap');
+
+
+:root {
+    --primario:#74BDCB;
+    --secundario: #FFA384;
+    --terciario: #EFE7BC;
+    --cuaternario: #E7F2F8;
+    --negro: #000;
+    --blanco: #fff;
+    --gris: #3f3f3f;
+  
+
+}
+
+body {
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    overflow-x: hidden;
+}
+
+/*menu*/
+
+#menu li > a {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--gris);
+}
+
+#menu form > button {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/*header*/
+
+header {
+    background-color: var(--primario);
+}
+
+.bg-secondary {
+    color: var(--blanco);
+    border: none;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.bg-secondary:hover {
+ color: var(--primario);
+}
+
+/*slider*/
+
+.carousel-inner {
+    max-height: 39rem;
+}
+
+/*intro*/
+
+.span1 {
+    color: var(--secundario);
+
+}
+
+.span2 {
+    color: var(--primario);
+}
+
+/*Acerca de nosotros*/
+
+.span3 {
+    color: var(--secundario);
+}
+
+/*Formulario*/
+.contenedor {
+    background-color: var(--secundario);
+}
+.enviar {
+    background-color: var(--gris);
+    color: var(--blanco);
+    border: none;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+
+.enviar:hover {
+    background-color: var(--gris);
+    color: var(--primario);
+}
+/*Footer*/
+
+footer {
+    background: var(--primario);
+    min-height: 100px;;
+}
+footer p{
+    color:#f3f3f3;
+    text-align:center;
+}
+#iconos  i {
+    font-size: 26px;
+    padding: 0 8px;
+    color:#f3f3f3;
+}
+
+
+
+
+@media (max-width:768px) {
+
+    #intro, #equipo {
+        width:90% !important;
+    }
+
+    #equipo p {
+        display: none;
+    }
+
+    .servicio-fila {
+        width: 100% !important;
+        text-align: center;
+    }
+}
+
+@media (max-width:576px) {
+    .icono-wrap {
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+}
